@@ -1,68 +1,196 @@
-/*Modo Cascata*/
-
-/*body
+header
 {
-    background: #CCCCCC;
-}*/
-
-#banner
-{
-    width: 100%;    
+    background: #BBBBBB;
+    padding: 20px;
+    
 }
 
-.Principal
+.caixa
 {
-    background: #CCCCCC;
-    padding: 30px;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
 }
 
-
-.titulo-principal
+nav
 {
-   padding: 20px; 
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-
-.titulo-centralizado
+nav li
 {
-    text-align: center;
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-p
+nav a
 {
-    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-#missao
+nav a:hover
 {
-    font-size: 20px;
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-em strong
-{
-    color: #FF0000;
-}
-
-.itens
-{
-    font-style: italic;
-}
-
-.Beneficios
-{
-    background: #FFFFFF;
-}
-
-
-ul
+.produtos li
 {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    /*border: 2px solid #000000; declaração unificada*/
+    /*border-top-left-radius: 10px; poder ser feito mais de uma declaração para borda*/
+    border-radius: 10px;
 }
 
-.imagembeneficios
+.produtos li:hover
 {
+    border-color: #C78C19;
+    
+}
+
+.produtos li:active
+{
+    border-color: #088C19;
+}
+
+.produtos li:hover h2
+{
+    font-size: 34px;
+}
+
+.produtos h2
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos .produto-descricao
+{
+    font-size: 18px;
+    font-style: italic;   
+}
+
+.produtos .produto-preco
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    /*margin: 10px 0 0; mesma coisa da opção de cima*/
+}
+
+footer
+{
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright
+{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.copyright:hover
+{
+    color: #C78C19;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+main
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form
+{
+    margin: 40px 0;
+}
+
+form label, form legend
+{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
+   
+}
+
+.checkbox
+{
+    margin: 20px 0;
+}
+
+.enviar
+{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    
+   /* transition: 1s background;*/
+   transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover
+{
+    background: darkorange;
+    color: white;
+    transform: scale(1.2);
+    
+    /*para somar transformações transform: rotate(1200deg) scale(3);*/
+}
+
+table
+{
+    margin: 20px 0 40px;
+}
+
+thead
+{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th
+{
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
